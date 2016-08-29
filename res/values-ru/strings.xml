@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">ИнфоКГС</string>
+    <string name="input_nick">Введите никнейм</string>
+    <string name="go">Поиск по списку</string>
+    <string name="notification">Уведомление</string>
+    <string name="del_msg">Вы действительно хотите удалить игрока из списка?</string>
+    <string name="status">"HTTP статус 503 - Превышен лимит запросов".</string>
+    <string name="request_quota">Архив игр защищён от автоматических загрузок. Если Вы отправляете слишком частые запросы к серверу, то Ваш IP блокируется на 1 час. </string>
+    <string name="double_player">Этот пользователь уже есть в списке!</string>
+    <string name="wrong_nickname">Никнейм не существует!</string>
+    <string name="remove">Удалить</string>
+    <string name="cancel">Отмена</string>
+    <string name="close">Закрыть</string>
+    <string name="wrong_msg">Вы не ввели никнейм!</string>
+    <string name="wrong_msg2">Пользователь уже есть в Вашем списке!</string>
+    <string name="graf">График</string>
+    <string name="info">Инфо</string>
+
+    <string name="white">Белый:</string>
+    <string name="black">Чёрный:</string>
+    <string name="setup">Доска:</string>
+    <string name="time">Дата:</string>
+    <string name="type">Тип игры:</string>
+    <string name="result">Результат:</string>
+    <string name="link">Ссылка</string>
+    <string name="viewable">Просмотр?</string>
+    <string name="noviewable">Просмотр этой партии невозможен!</string>
+    <string name="nogames">Нет сыгранных партий за этот месяц.</string>
+    <string name="guest_acc">Включать просроченные и гостевые учётные записи?</string>
+    <string name="archive">Сохранить ZIP архив игр за месяц?</string>
+    <string name="archive_game">Сохранить игру на устройство?</string>
+    <string name="file_downloaded">Архив загружен на sdcard.</string>
+    <string name="game_downloaded">Игра загружена на sdcard.</string>
+    <string name="download_error">Ошибка загрузки: </string>
+
+    <string name="download_archive">Скачать zip</string>
+
+    <string name="ranked">Рейтинговая</string>
+    <string name="simul">Сеанс</string>
+    <string name="free">Свободная</string>
+    <string name="rengo">Ренго</string>
+    <string name="tournament">Турнирная</string>
+    <string name="demonstration">Демонстрация</string>Teaching
+    <string name="teaching">Обучение</string>
+
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+
+    <string name="loading">Загрузка...</string>
+    <string name="ok">Ок</string>
+
+    <string name="jan">Январь</string>
+    <string name="feb">Февраль</string>
+    <string name="mar">Март</string>
+    <string name="apr">Апрель</string>
+    <string name="may">Май</string>
+    <string name="jun">Июнь</string>
+    <string name="jul">Июль</string>
+    <string name="aug">Август</string>
+    <string name="sep">Сентябрь</string>
+    <string name="oct">Октябрь</string>
+    <string name="nov">Ноябрь</string>
+    <string name="dec">Декабрь</string>
+
+    <string name="development">Разработчик: </string>
+    <string name="libraries">В приложении использованы следующие проекты: </string>
+
+    <string name="blog">Блог:</string>
+    <string name="google_play">Приложения:</string>
+    <string name="github">Github:</string>
+
+    <string name="jsoup">Jsoup:</string>
+    <string name="webgoboard">Webgoboard:</string>
+    <string name="jsbridge">JsBridge:</string>
+
+    <string name="adv">Если Вы хотите поддержать проект, то кликнете по рекламе</string>
+
+</resources>

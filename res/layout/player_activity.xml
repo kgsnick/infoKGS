@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="asdk.kgs.go.infokgs.PlayerActivity"
+    android:background="@drawable/backgroundpattern"
+    android:gravity="center_horizontal"
+    android:foregroundGravity="center_vertical">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_height="62dp"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_height="40dp"
+            android:id="@+id/button"
+            android:background="@mipmap/ic_navigation_arrow_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_width="40dp"
+            android:onClick="onClick"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:id="@+id/playerID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/white"
+            android:text="Player"
+            android:layout_toRightOf="@+id/button"
+            android:layout_toEndOf="@+id/button"
+            android:layout_marginLeft="5dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/buttonSeeGraph"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onClickGraph"
+                android:enabled="true"
+                android:background="@drawable/button_graph"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/guest_acc"
+        android:id="@+id/checkBoxPlayer"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:textColor="#3f51b6" />
+
+    <GridView
+        android:id="@+id/gridview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="13"
+        android:verticalSpacing="1dp"
+        android:horizontalSpacing="1dp"
+        android:layout_alignWithParentIfMissing="false"
+        android:stackFromBottom="false"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/checkBoxPlayer"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp">
+    </GridView>
+
+</RelativeLayout>

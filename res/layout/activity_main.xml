@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundpattern">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_height="62dp"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <Button
+            android:id="@+id/info"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="onClick"
+            android:enabled="true"
+            android:background="@drawable/info"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="right"
+            android:visibility="visible"
+            android:id="@+id/ll1"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/input_nick"
+                android:textColorHint="@color/switch_thumb_normal_material_light"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                android:paddingLeft="15dp"
+                android:layout_marginRight="5dp"
+                android:textColor="@android:color/white" />
+
+            <Button
+                android:id="@+id/addItem"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:onClick="onClick"
+                android:enabled="true"
+                android:background="@drawable/button_add" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/toolbar"
+        android:dividerHeight="3dp"
+        android:layout_margin="10dp"
+        android:divider="@android:color/transparent">
+    </ListView>
+
+</RelativeLayout>

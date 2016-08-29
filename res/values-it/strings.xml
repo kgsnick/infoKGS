@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">InfoKGS</string>
+    <string name="input_nick">Inserire il nickname</string>
+    <string name="go">Cerca</string>
+    <string name="notification">Avviso</string>
+    <string name="del_msg">Vuoi davvero rimuovere il giocatore dalla lista?</string>
+    <string name="status">"HTTP status 503 - Superato il numero massimo consentito di richieste".</string>
+    <string name="request_quota">L\'archivio delle partite \u00e8 protetto da download automatici. Perci\u00f2 dopo molte richieste, le richieste provenienti dallo stesso IP vengono disabilitate per un\'ora.</string>
+    <string name="double_player">L\'utente \u00e8 gi\u00e1 presente nella lista!</string>
+    <string name="wrong_nickname">Questo nickname non esiste!</string>
+    <string name="remove">Rimuovi</string>
+    <string name="cancel">Annulla</string>
+    <string name="close">Chiudi</string>
+    <string name="wrong_msg">Non hai inserito un nickname!</string>
+    <string name="wrong_msg2">Utente già presente nella tua lista!</string>
+    <string name="graf">Grafico</string>
+    <string name="info">Informazioni</string>
+
+    <string name="white">Bianco:</string>
+    <string name="black">Nero:</string>
+    <string name="setup">Dimens.:</string>
+    <string name="time">Data:</string>
+    <string name="type">Tipo:</string>
+    <string name="result">Risultato:</string>
+    <string name="link">Link</string>
+    <string name="viewable">Visibile?</string>
+    <string name="noviewable">Impossible visualizzare questa partita!</string>
+    <string name="nogames">Non ci sono partite nel mese selezionato.</string>
+    <string name="guest_acc">Includere ospiti e account scaduti?</string>
+    <string name="archive">Salvare un archivio ZIP con le partite del mese selezionato?</string>
+    <string name="archive_game">Salvare la partita sul dispositivo?</string>
+    <string name="file_downloaded">Archivio scaricato sulla sd card.</string>
+    <string name="game_downloaded">Partita scaricata sulla sd card.</string>
+    <string name="download_error">Errore di caricamento: </string>
+
+    <string name="download_archive">Download zip</string>
+
+    <string name="ranked">Ufficiale</string>
+    <string name="simul">Simultanea</string>
+    <string name="free">Libera</string>
+    <string name="rengo">Rengo</string>
+    <string name="tournament">Torneo</string>
+    <string name="demonstration">Dimostrazione</string>
+    <string name="teaching">Insegnamento</string>
+
+    <string name="yes">S\u00ec</string>
+    <string name="no">No</string>
+
+    <string name="loading">Caricamento in corso...</string>
+    <string name="ok">Ok</string>
+
+    <string name="jan">Gennaio</string>
+    <string name="feb">Febbraio</string>
+    <string name="mar">Marzo</string>
+    <string name="apr">Aprile</string>
+    <string name="may">Maggio</string>
+    <string name="jun">Giugno</string>
+    <string name="jul">Luglio</string>
+    <string name="aug">Agosto</string>
+    <string name="sep">Settembre</string>
+    <string name="oct">Ottobre</string>
+    <string name="nov">Novembre</string>
+    <string name="dec">Dicembre</string>
+
+    <string name="development">Sviluppatore:</string>
+    <string name="blog">Blog:</string>
+    <string name="google_play">Apps:</string>
+    <string name="github">Github:</string>
+
+    <string name="libraries">Questa applicazione use le librerie:</string>
+    <string name="jsoup">Jsoup:</string>
+    <string name="webgoboard">Webgoboard:</string>
+    <string name="jsbridge">JsBridge:</string>
+
+    <string name="adv">Clicca sulla pubblicità per supportare il progetto</string>
+
+</resources>

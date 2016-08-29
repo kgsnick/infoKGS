@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_height="62dp"
+        android:layout_width="fill_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="@color/colorPrimary" >
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_height="40dp"
+            android:id="@+id/button"
+            android:background="@mipmap/ic_navigation_arrow_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="false"
+            android:layout_alignParentEnd="false"
+            android:layout_width="40dp"
+            android:onClick="onClick"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="10dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|right"
+            android:id="@+id/ll1"
+            android:weightSum="1"
+            android:layout_toRightOf="@+id/button"
+            android:layout_toEndOf="@+id/button"
+            android:layout_alignTop="@+id/button"
+            android:layout_alignBottom="@+id/button"
+            android:baselineAligned="false"
+            android:layout_marginLeft="5dp">
+
+            <TableLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imageBlack"
+                        android:src="@drawable/oval_black"
+                        android:layout_column="0"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="asdk [30k] Genghis [30k]"
+                        android:id="@+id/black"
+                        android:layout_gravity="left|center_horizontal"
+                        android:gravity="center|right"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/white"
+                        android:layout_below="@+id/white"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="5dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageWhite"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/oval_white"
+                        android:layout_column="0"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:text="clydesdale [30k] clydesdale [30k]"
+                        android:id="@+id/white"
+                        android:layout_gravity="left|center_horizontal"
+                        android:textSize="12sp"
+                        android:textColor="@android:color/white"
+                        android:gravity="left|center"
+                        android:layout_below="@+id/r"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="5dp" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/saveZip"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:onClick="gameSaveClick"
+            android:enabled="true"
+            android:background="@drawable/button_save"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/r"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#6eff51"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:background="@android:color/black"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/sgfFile"
+        android:layout_gravity="center_horizontal" />
+
+
+
+    <com.github.lzyzsd.jsbridge.BridgeWebView
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/r">
+
+    </com.github.lzyzsd.jsbridge.BridgeWebView>
+
+</RelativeLayout>
